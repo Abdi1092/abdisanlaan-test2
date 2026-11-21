@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /cart
+Disallow: /checkout
+Disallow: /success
+
+Sitemap: https://vanta9-store.pages.dev/sitemap.xml

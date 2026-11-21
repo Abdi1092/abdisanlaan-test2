@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VANTA/9 – Streetwear for the night shift</title>
+<meta name="description" content="VANTA/9 is a fictional streetwear brand: hoodies, shoes and accessories for the night shift. Built as a web development learning project.">
+<meta name="theme-color" content="#0c0c0e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VANTA/9 – Streetwear for the night shift">
+<meta property="og:description" content="Heavy hoodies, quiet sneakers and gear that looks better after dark.">
+<meta property="og:image" content="https://vanta9-store.pages.dev/images/hero.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="hero-wrap">
+    <div class="wrap hero">
+      <h1>Built for<br>the night shift</h1>
+      <p>Heavy hoodies, quiet sneakers and gear that looks better after dark.</p>
+      <div class="btns">
+        <a class="btn btn-light" href="#shop">Shop new drops</a>
+        <a class="btn btn-ghost" href="index.html?g=Sale#shop">See the sale</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap tiles" id="tiles" aria-label="Shop by category"></section>
+
+  <section class="wrap" id="shop">
+    <div class="shop-head"><h2 id="shopTitle">All products</h2><span class="mu" id="resultCount"></span></div>
+    <div class="tools">
+      <input id="q" type="search" placeholder="Search products" aria-label="Search products">
+      <select id="sort" aria-label="Sort products">
+        <option value="new">Newest</option>
+        <option value="low">Price: low to high</option>
+        <option value="high">Price: high to low</option>
+      </select>
+    </div>
+    <div class="tabs" id="tabs" aria-label="Category"></div>
+    <div class="chips" id="chips" aria-label="Type"></div>
+    <div class="grid" id="grid">
+      <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="site.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
